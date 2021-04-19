@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(34, 83, 146);
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  /* veiks tiktai kai yra display flex  VVV*/
+  justify-content: space-between;
+  /* veiks tiktai kai yra display flex  VVV*/
+  align-items: center;
+  padding: 40px 60px;
+  border: 1px solid rgb(104, 104, 104);
+  background-color: #f2f2f2;
+}
+
+.navigation ul,
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation li,
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navigation a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation a:hover {
+  color: rgb(33, 128, 141);
+}
+
+.navigation .logo img {
+  width: 80px;
+  height: auto;
+}
+
+.navigation .language-picker button {
+  display: inline-flex;
+  margin: 0;
+}
+.navigation .language-picker img {
+  width: 40px;
+  height: 30px;
+}
+.navigation .language-picker h4 {
+  font-weight: 300;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+}
+
+.hero-content img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+/* Section - global */
+.section {
+  width: 100%;
+  max-width: 980px;
+  /*      top  right bott left */
+  margin: 20px auto 80px auto;
+}
+
+/* Section - about */
+.section-about a {
+  color: rgb(34, 83, 146);
+}
+
+/* Section - features */
+.section-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-features .feature {
+  width: 30%;
+}
+.section-features .feature img {
+  width: 100%;
+}
+.section-features .feature-text {
+  display: block;
+  margin: 12px 0 18px;
+}
+.section-features .feature-sub-text {
+  display: block;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Section - train-*/
+.section-train {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-train .train-image {
+  width: 30%;
+  flex-grow: 1;
+  margin-right: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-train .train-image:hover img {
+  transform: scale(1.18);
+}
+
+.section-train .text-container {
+  width: 30%;
+  flex: 0 1 30%;
+}
+
+.section-train .text-container h3 {
+  font-size: 28px;
+}
+
+.section-train .text-container p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section-train .train-image img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #dedede;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.footer-links a {
+  color: #dedede;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .section {
+    max-width: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 920px) {
+  .hero-text {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 780px) {
+  .navigation {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navigation .logo img {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  .hero-text {
+    font-size: 22px;
+  }
+
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-about p {
+    text-align: justify;
+  }
+
+  .section-features {
+    flex-direction: column;
+  }
+
+  .section-features .feature {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section-features .feature-text {
+    font-size: 17px;
+  }
+
+  .section-features .feature-sub-text {
+    font-size: 15px;
+  }
+
+  /* App */
+  .section-train {
+    flex-direction: column;
+  }
+
+  .section-train .train-image {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+
+  .section-train .text-container {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+
+  .section-train .text-container h3 {
+    font-size: 28px;
+    text-align: justify;
+  }
+
+  .section-train .text-container p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .footer-links li {
+    display: block;
+    margin: 0;
+    margin-top: 14px;
+  }
+}
