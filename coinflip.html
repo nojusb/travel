@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOON GAMBLING</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.svg" alt="Logo" /> </a>
+      </div>
+      <div class="balance-container">
+        <h3>Balance:</h3>
+        <div class="balance-box">
+          <h3 class="balance-text"></h3>
+        </div>
+      </div>
+    </div>
+    <!-- burger menu -->
+    <nav class="navbar">
+      <div class="burger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Coinflip</a></li>
+        <li class="nav-item">
+          <a href="deposit.html" class="nav-link">Deposit</a>
+        </li>
+        <li class="nav-item">
+          <a href="withdraw.html" class="nav-link">Withdraw</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Coinflip -->
+    <div class="coinflip-container">
+      <h1 class="coinflip-text">COINFLIP</h1>
+      <div class="split-line"></div>
+      <div class="container">
+        <div id="coin" class="">
+          <div id="day" class="day"></div>
+          <div id="night" class="night"></div>
+        </div>
+        <div class="buttons-and-amount">
+          <input type="number" class="input" />
+          <button id="flip1">DAY</button>
+          <button id="flip2" class="night-button">NIGHT</button>
+        </div>
+        <p>THIS SESSION:</p>
+        <p>
+          DAY: <span id="dayCount">0</span> NIGHT:
+          <span id="nightCount">0</span>
+        </p>
+        <p>
+          <span>RESULT: </span>
+          <span class="status" id="status">...</span>
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner section">
+        <div class="footer-copyright">
+          <span>MOON GAMBLING EST. 2021</span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
